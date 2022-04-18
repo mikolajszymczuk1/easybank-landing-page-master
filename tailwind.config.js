@@ -18,6 +18,9 @@ module.exports = {
         },
         fontFamily: {
             "main": ["Public Sans", "sans-serif"]
+        },
+        screens: {
+            "md": "1024px"
         }
     },
     plugins: [],
