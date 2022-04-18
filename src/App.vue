@@ -1,14 +1,14 @@
 <template>
-    <HelloWorld />
+    <NavigationBar />
 </template>
 
 <script>
-    import HelloWorld from "@/components/HelloWorld.vue";
+    import NavigationBar from "@/components/NavigationBar.vue";
 
     export default {
         name: "App",
         components: {
-            HelloWorld
+            NavigationBar
         }
     }
 </script>
