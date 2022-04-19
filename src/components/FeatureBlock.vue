@@ -1,4 +1,5 @@
 <template>
+    <!-- Feature Block component -->
     <div class="text-center font-main md:text-left">
         <slot name="icon"></slot>
         
