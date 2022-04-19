@@ -97,9 +97,6 @@
     import FeatureBlock from "@/components/FeatureBlock.vue";
     import ArticleCard from "@/components/cards/ArticleCard.vue";
 
-    // Icons paths
-    
-
     export default {
         name: "App",
         components: {
