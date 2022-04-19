@@ -22,7 +22,7 @@
             >
         </div>
 
-        <div class="font-main text-center px-[5%] ssm:px-[20%] md:p-0 md:pl-[10%] md:pr-[5%] md:text-left md:basis-[50%] lg:pl-[11.5%] lg:pr-[8%]">
+        <div class="font-main text-center pb-[90px] px-[5%] ssm:px-[20%] md:p-0 md:pl-[10%] md:pr-[5%] md:text-left md:basis-[50%] lg:pl-[11.5%] lg:pr-[8%]">
             <h1 class="text-[2.4em] text-dark-blue font-light leading-[45px] mb-[20px] lg:text-[3.4em] lg:leading-[65px] lg:mb-[25px]">
                 Next generation digital banking
             </h1>
@@ -35,17 +35,89 @@
             <InviteButton />
         </div>
     </header>
+
+    <!-- Main content -->
+    <main class="relative bg-light-grayish-blue">
+        <!-- Why choose Easybank section -->
+        <section class="font-main px-[7%] py-[65px] ssm:px-[25%] md:px-[8%] lg:py-[110px] lg:px-[11.5%]">
+            <h2 class="mb-[20px] text-[2em] font-light text-dark-blue text-center leading-[36px] md:text-left lg:text-[2.4em] lg:mb-[30px]">
+                Why choose Easybank?
+            </h2>
+
+            <p class="text-center text-[0.9em] text-grayish-blue mb-[55px] leading-[25px] md:text-left md:w-[60%] lg:text-[1.1em] lg:leading-[26px] lg:w-[55%] lg:mb-[75px] xl:w-[43%]">
+                We leverage Open Banking to turn your bank account into your financial hub. Control 
+                your finances like never before.
+            </p>
+
+            <div class="md:flex">
+                <FeatureBlock class="mb-[60px] last:mb-0 md:mb-0 md:mx-[15px] md:first:ml-0 md:last:mr-0 lg:ml-0 lg:mr-[55px]"
+                    v-for="f in features"
+                    :key="f.id"
+                >
+                    <template #icon>
+                        <img class="inline-block"
+                            :src="`/featureImages/${ f.image }`"
+                            :alt="f.name"
+                            title="Feature icon"
+                        >
+                    </template>
+
+                    <template #block-heading>{{ f.title }}</template>
+                    <template #block-text>{{ f.content }}</template>
+                </FeatureBlock>
+            </div>
+        </section>
+    </main>
 </template>
 
 <script>
     import NavigationBar from "@/components/NavigationBar.vue";
     import InviteButton from "@/components/buttons/InviteButton.vue";
+    import FeatureBlock from "@/components/FeatureBlock.vue";
+
+    // Icons paths
+    
 
     export default {
         name: "App",
         components: {
             NavigationBar,
-            InviteButton
+            InviteButton,
+            FeatureBlock
+        },
+        data() {
+            return {
+                features: [
+                    {
+                        id: 0,
+                        name: "Online Icon",
+                        image: "icon-online.svg",
+                        title: "Online Banking",
+                        content: "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."
+                    },
+                    {
+                        id: 1,
+                        name: "Budgeting Icon",
+                        image: "icon-budgeting.svg",
+                        title: "Simple Budgeting",
+                        content: "See exactly where your money goes each month. Receive notifications when you're close to hitting your limits."
+                    },
+                    {
+                        id: 2,
+                        name: "Onboarding Icon",
+                        image: "icon-onboarding.svg",
+                        title: "Fast Onboarding",
+                        content: "We don't do branches. Open your account in minutes online and start taking control of your finances right away."
+                    },
+                    {
+                        id: 3,
+                        name: "Api Icon",
+                        image: "icon-api.svg",
+                        title: "Open API",
+                        content: "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."
+                    }
+                ]
+            }
         }
     }
 </script>
