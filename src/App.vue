@@ -37,9 +37,9 @@
     </header>
 
     <!-- Main content -->
-    <main class="relative bg-light-grayish-blue">
+    <main class="relative">
         <!-- Why choose Easybank section -->
-        <section class="font-main px-[7%] py-[65px] ssm:px-[25%] md:px-[8%] lg:py-[110px] lg:px-[11.5%]">
+        <section class="font-main bg-light-grayish-blue px-[7%] py-[65px] ssm:px-[25%] md:px-[8%] lg:py-[110px] lg:px-[11.5%]">
             <h2 class="mb-[20px] text-[2em] font-light text-dark-blue text-center leading-[36px] md:text-left lg:text-[2.4em] lg:mb-[30px]">
                 Why choose Easybank?
             </h2>
@@ -49,6 +49,7 @@
                 your finances like never before.
             </p>
 
+            <!-- Container with all feature blocks -->
             <div class="md:flex">
                 <FeatureBlock class="mb-[60px] last:mb-0 md:mb-0 md:mx-[15px] md:first:ml-0 md:last:mr-0 lg:ml-0 lg:mr-[55px]"
                     v-for="f in features"
@@ -67,6 +68,26 @@
                 </FeatureBlock>
             </div>
         </section>
+
+        <!-- Latest Articles section -->
+        <section class="bg-very-light-gray px-[7%] pt-[85px] pb-[90px] ssm:px-[25%] md:px-[8%] lg:px-[11.5%] lg:pb-[80px]">
+            <h2 class="text-center text-dark-blue font-main text-[1.9em] font-light mb-[27px] md:text-left lg:text-[2.4em] lg:mb-[40px]">
+                Latest Articles
+            </h2>
+
+            <!-- Container with all latest articles -->
+            <div class="md:flex">
+                <ArticleCard class="mb-[25px] last:mb-0 md:mb-0 md:mx-[5px] mlg:ml-0 mlg:mr-[15px] mlg:last:mr-0 lg:mr-[30px]"
+                    v-for="a in articles"
+                    :key="a.id"
+                    :article-image="a.image"
+                >
+                    <template #article-author>{{ a.author }}</template>
+                    <template #article-title>{{ a.title }}</template>
+                    <template #article-content>{{ a.content }}</template>
+                </ArticleCard>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -74,6 +95,7 @@
     import NavigationBar from "@/components/NavigationBar.vue";
     import InviteButton from "@/components/buttons/InviteButton.vue";
     import FeatureBlock from "@/components/FeatureBlock.vue";
+    import ArticleCard from "@/components/cards/ArticleCard.vue";
 
     // Icons paths
     
@@ -83,7 +105,8 @@
         components: {
             NavigationBar,
             InviteButton,
-            FeatureBlock
+            FeatureBlock,
+            ArticleCard
         },
         data() {
             return {
@@ -115,6 +138,36 @@
                         image: "icon-api.svg",
                         title: "Open API",
                         content: "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."
+                    }
+                ],
+                articles: [
+                    {
+                        id: 0,
+                        image: "image-currency.jpg",
+                        author: "By Claire Robinson",
+                        title: "Receive money in any currency with no fees",
+                        content: "The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single …"
+                    },
+                    {
+                        id: 1,
+                        image: "image-restaurant.jpg",
+                        author: "By Wilson Hutton",
+                        title: "Treat yourself without worrying about money",
+                        content: "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"
+                    },
+                    {
+                        id: 2,
+                        image: "image-plane.jpg",
+                        author: "By Wilson Hutton",
+                        title: "Take your Easybank card wherever you go",
+                        content: "We want you to enjoy your travels. This is why we don't charge any fees on purchases while you're abroad. We'll even show you …"
+                    },
+                    {
+                        id: 3,
+                        image: "image-confetti.jpg",
+                        author: "By Claire Robinson",
+                        title: "Our invite-only Beta accounts are now live!",
+                        content: "After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request an invite through the site ..."
                     }
                 ]
             }
