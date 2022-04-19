@@ -1,6 +1,6 @@
 <template>
     <!-- Navigation bar component -->
-    <nav class="before:fixed md:before:hidden before:top-[0] before:left-[0] before:w-[100%] before:h-[100%] before:bg-dark-blue/25 before:z-[2] z-[2]"
+    <nav class="before:fixed md:before:hidden before:top-[0] before:left-[0] before:w-[100%] before:h-[100%] before:bg-dark-blue/25 before:bg-gradient-to-b before:from-dark-blue before:z-[2] z-[2]"
         :class="isMenuActive ? '' : 'before:hidden'"
     >
         <div class="flex justify-between items-center py-[23px] px-[27px] relative bg-white z-[2] md:py-0 lg:px-[160px] xl:px-[11.5%]">
