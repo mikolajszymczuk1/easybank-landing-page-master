@@ -31,8 +31,7 @@
                     Contact
                 </NavigationLink>
 
-                <NavigationLink class=""
-                    link-address="#Blog"
+                <NavigationLink link-address="#Blog"
                     is-dark-mode
                 >
                     Blog
@@ -54,8 +53,7 @@
                     Support
                 </NavigationLink>
                 
-                <NavigationLink class=""
-                    link-address="#PrivacyPolicy"
+                <NavigationLink link-address="#PrivacyPolicy"
                     is-dark-mode
                 >
                     Privacy Policy

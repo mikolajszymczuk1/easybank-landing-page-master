@@ -2,6 +2,7 @@
     <!-- Navigation bar component -->
     <nav class="before:fixed md:before:hidden before:top-[0] before:left-[0] before:w-[100%] before:h-[100%] before:bg-dark-blue/25 before:bg-gradient-to-b before:from-dark-blue before:z-[2] z-[2]"
         :class="isMenuActive ? '' : 'before:hidden'"
+        data-test="navigation-bar"
     >
         <div class="flex justify-between items-center py-[23px] px-[27px] relative bg-white z-[2] md:py-0 lg:px-[160px] xl:px-[11.5%]">
             <LogoIcon />
@@ -9,6 +10,7 @@
             <!-- Links container -->
             <div class="absolute flex-col justify-center items-center bg-white rounded-[5px] py-[30px] w-[87%] left-[50%] top-[93px] translate-x-[-50%] sm:w-[400px] sm:translate-x-0 sm:left-auto sm:right-[4%] sm:top-[105px] md:static md:flex md:flex-row md:rounded-none md:p-0"
                 :class="isMenuActive ? 'flex' : 'hidden'"
+                data-test="links-container"
             >
                 <NavigationLink class="mb-[18px] md:mb-0 md:mx-[15px]" link-address="#Home" is-menu-link>Home</NavigationLink>
                 <NavigationLink class="mb-[18px] md:mb-0 md:mx-[15px]" link-address="#About" is-menu-link>About</NavigationLink>

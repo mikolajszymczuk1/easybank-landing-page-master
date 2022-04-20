@@ -3,6 +3,7 @@
     <a class="font-main inline-block relative overflow-hidden"
         :href="linkAddress"
         :class="getClasses"
+        data-test="link"
     >
         <slot></slot>
     </a>
