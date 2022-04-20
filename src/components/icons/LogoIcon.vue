@@ -2,7 +2,7 @@
     <!-- Logo icon component -->
     <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
         <defs>
-            <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
+            <linearGradient id="aa" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
                 <stop offset="0%" stop-color="#33D35E" />
                 <stop offset="100%" stop-color="#2AB6D9" />
             </linearGradient>
