@@ -89,6 +89,8 @@
             </div>
         </section>
     </main>
+
+    <FooterMain />
 </template>
 
 <script>
@@ -96,6 +98,7 @@
     import InviteButton from "@/components/buttons/InviteButton.vue";
     import FeatureBlock from "@/components/FeatureBlock.vue";
     import ArticleCard from "@/components/cards/ArticleCard.vue";
+    import FooterMain from "@/components/FooterMain.vue";
 
     export default {
         name: "App",
@@ -103,7 +106,8 @@
             NavigationBar,
             InviteButton,
             FeatureBlock,
-            ArticleCard
+            ArticleCard,
+            FooterMain
         },
         data() {
             return {
