@@ -14,7 +14,7 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
   - [Continued development](#continued-development)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-- [Run Project](#how-to-run-project)
+- [Run Project](#project-setup)
 
 ## Overview
 
@@ -27,12 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./screenshot-desktop-a.png)
+![](./screenshot-desktop-b.png)
+![](./screenshot-desktop-c.png)
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/vue-3-tailwindcss-HkSNHlC45)
+- Live Site URL: [Live](https://luxury-salamander-6b55df.netlify.app/)
 
 ## My process
 
