@@ -15,7 +15,7 @@
             </p>
 
             <!-- Article title -->
-            <h3 class="text-dark-blue font-light text-[1em] leading-[20px] mb-[10px] cursor-pointer hover:text-lime-green"
+            <h3 class="text-dark-blue transition-colors duration-100 ease-out font-light text-[1em] leading-[20px] mb-[10px] cursor-pointer hover:text-lime-green"
                 data-test="article-title"
             >
                 <slot name="article-title"></slot>

@@ -8,11 +8,11 @@
                 />
 
                 <div class="flex justify-center items-center">
-                    <FacebookIcon class="mr-[15px] w-[25px] h-auto md:w-[20px] fill-white hover:fill-lime-green cursor-pointer" />
-                    <YoutubeIcon class="mr-[15px] w-[25px] h-auto md:w-[20px] fill-white hover:fill-lime-green cursor-pointer" />
-                    <TwitterIcon class="mr-[15px] w-[25px] h-auto md:w-[20px] fill-white hover:fill-lime-green cursor-pointer" />
-                    <PinterestIcon class="mr-[15px] w-[25px] h-auto md:w-[20px] fill-white hover:fill-lime-green cursor-pointer" />
-                    <InstagramIcon class="w-[25px] h-auto md:w-[20px] fill-white hover:fill-lime-green cursor-pointer" />
+                    <FacebookIcon class="mr-[15px] w-[25px] h-auto md:w-[20px] transition-colors fill-white hover:fill-lime-green cursor-pointer" />
+                    <YoutubeIcon class="mr-[15px] w-[25px] h-auto md:w-[20px] transition-colors fill-white hover:fill-lime-green cursor-pointer" />
+                    <TwitterIcon class="mr-[15px] w-[25px] h-auto md:w-[20px] transition-colors fill-white hover:fill-lime-green cursor-pointer" />
+                    <PinterestIcon class="mr-[15px] w-[25px] h-auto md:w-[20px] transition-colors fill-white hover:fill-lime-green cursor-pointer" />
+                    <InstagramIcon class="w-[25px] h-auto md:w-[20px] fill-white transition-colors hover:fill-lime-green cursor-pointer" />
                 </div>
             </div>
 

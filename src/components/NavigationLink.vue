@@ -1,6 +1,6 @@
 <template>
     <!-- Navigation link component -->
-    <a class="font-main inline-block relative overflow-hidden"
+    <a class="font-main inline-block relative overflow-hidden transition-colors before:transition-transform before:duration-100 before:ease-out"
         :href="linkAddress"
         :class="getClasses"
         data-test="link"
